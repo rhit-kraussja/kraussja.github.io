@@ -1,0 +1,85 @@
+body {
+    background:white;
+    margin: 3px;
+    border-width: 3px;
+    border-color: lightskyblue;
+}
+
+.navbar {
+    background-color:lightblue;
+    color: black;
+    padding: 3px;
+    font-size: larger;
+}
+
+#navbar {
+    background-color:lightblue;
+    color: black;
+    padding: 3px;
+    font-size: larger;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#professional-picture{
+    margin-right: 10px;
+    /* max-width: 50%; */
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 2%;
+    /* background-color: lightskyblue; */
+}
+h3{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-indent: 3%;
+    /* background-color: lightsteelblue; */
+}
+h4{
+    font-family: Arial, sans-serif;
+    text-indent: 4%;
+    /* background-color: lightseagreen; */
+}
+
+ul{
+    margin-left: 5%;
+    /* text-indent: 5%; */
+}
+
+#about{
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "nav nav"
+        "main pic"
+        "foot foot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+#about > img{
+    grid-area: pic;
+    margin-top: 10px;
+}
+#about > header{
+    grid-area: head;
+}
+#about > nav{
+    grid-area: nav;
+}
+#about > main{
+    grid-area: main;
+    margin-top: 10px;
+}
